@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+    <metadata>
+        <titulo>Catálogo de Productos AWS Textract API</titulo>
+        <version>1.0</version>
+        <fecha_actualizacion>2024-09-22</fecha_actualizacion>
+    </metadata>
+    
+    <productos>
+        <producto id="001" categoria="software">
+            <nombre>AWS Textract API Professional</nombre>
+            <descripcion>API completa para extracción de texto de documentos</descripcion>
+            <precio moneda="USD">299.99</precio>
+            <caracteristicas>
+                <caracteristica>Soporte para múltiples formatos</caracteristica>
+                <caracteristica>Procesamiento en la nube y local</caracteristica>
+                <caracteristica>API REST con FastAPI</caracteristica>
+                <caracteristica>Documentación automática</caracteristica>
+            </caracteristicas>
+            <disponible>true</disponible>
+        </producto>
+        
+        <producto id="002" categoria="servicio">
+            <nombre>Consultoría en Extracción de Documentos</nombre>
+            <descripcion>Servicio de consultoría especializada en AWS Textract</descripcion>
+            <precio moneda="USD">150.00</precio>
+            <caracteristicas>
+                <caracteristica>Análisis de requerimientos</caracteristica>
+                <caracteristica>Implementación personalizada</caracteristica>
+                <caracteristica>Soporte técnico</caracteristica>
+                <caracteristica>Capacitación del equipo</caracteristica>
+            </caracteristicas>
+            <disponible>true</disponible>
+        </producto>
+        
+        <producto id="003" categoria="herramienta">
+            <nombre>Textract Dashboard</nombre>
+            <descripcion>Panel de control para monitoreo de extracciones</descripcion>
+            <precio moneda="USD">99.99</precio>
+            <caracteristicas>
+                <caracteristica>Métricas en tiempo real</caracteristica>
+                <caracteristica>Historial de procesamiento</caracteristica>
+                <caracteristica>Alertas automáticas</caracteristica>
+                <caracteristica>Reportes detallados</caracteristica>
+            </caracteristicas>
+            <disponible>false</disponible>
+        </producto>
+    </productos>
+</catalogo>

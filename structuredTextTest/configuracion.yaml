@@ -1,0 +1,76 @@
+aplicacion:
+  nombre: "AWS Textract API"
+  version: "1.0.0"
+  descripcion: "API profesional para extracción de texto de documentos"
+  autor: "Plinior Zavala"
+  
+servidor:
+  host: "localhost"
+  puerto: 8000
+  ssl: false
+  workers: 4
+  timeout: 30
+  debug: true
+  
+aws:
+  region: "us-east-1"
+  s3_bucket: "textract-plinior-bucket"
+  servicios:
+    - textract
+    - s3
+  configuracion:
+    max_file_size: "16MB"
+    retry_attempts: 3
+    
+motores_extraccion:
+  textract:
+    formatos: ["pdf", "png", "jpg", "jpeg", "tiff"]
+    procesamiento:
+      sincrono: ["png", "jpg", "jpeg"]
+      asincrono: ["pdf", "tiff"]
+    limites:
+      sincrono_mb: 10
+      asincrono_mb: 500
+      
+  local:
+    formatos: ["docx", "xlsx", "xls", "pptx", "rtf", "odt"]
+    librerias:
+      docx: ["docx2txt", "python-docx"]
+      excel: ["openpyxl", "xlrd"]
+      powerpoint: ["python-pptx"]
+      rtf: ["pypandoc", "striprtf"]
+      odt: ["pypandoc", "odfpy"]
+      
+  structured:
+    formatos: ["txt", "md", "log", "json", "csv", "xml", "html", "yaml", "ini"]
+    parsers:
+      html: "beautifulsoup4"
+      yaml: "PyYAML"
+      xml: "xml.etree.ElementTree"
+      json: "json"
+      ini: "configparser"
+      
+endpoints:
+  - ruta: "/api/extract"
+    metodo: "POST"
+    descripcion: "Procesa archivos subidos directamente"
+    parametros:
+      - file
+      - analysis_type
+      - engine
+      - s3_bucket
+      
+  - ruta: "/api/extract-url"
+    metodo: "POST"
+    descripcion: "Procesa archivos desde URLs o S3 URIs"
+    parametros:
+      - source_url
+      - analysis_type
+      
+  - ruta: "/health"
+    metodo: "GET"
+    descripcion: "Health check del servicio"
+    
+  - ruta: "/docs"
+    metodo: "GET"
+    descripcion: "Documentación interactiva Swagger"

@@ -1,0 +1,11 @@
+id,nombre,email,edad,ciudad,rol,fecha_registro
+1,Juan Pérez,juan.perez@email.com,28,Lima,admin,2024-01-15
+2,María García,maria.garcia@email.com,32,Arequipa,usuario,2024-02-20
+3,Carlos López,carlos.lopez@email.com,25,Cusco,usuario,2024-03-10
+4,Ana Rodríguez,ana.rodriguez@email.com,29,Trujillo,moderador,2024-04-05
+5,Pedro Martínez,pedro.martinez@email.com,35,Piura,usuario,2024-05-12
+6,Lucía Fernández,lucia.fernandez@email.com,27,Iquitos,admin,2024-06-18
+7,Diego Vargas,diego.vargas@email.com,31,Huancayo,usuario,2024-07-22
+8,Carmen Silva,carmen.silva@email.com,26,Tacna,usuario,2024-08-14
+9,Roberto Díaz,roberto.diaz@email.com,33,Chiclayo,moderador,2024-09-01
+10,Elena Torres,elena.torres@email.com,30,Ayacucho,usuario,2024-09-15

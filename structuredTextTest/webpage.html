@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Textract API - Documentación</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background-color: #f0f0f0; padding: 20px; }
+        .content { margin: 20px 0; }
+        .feature { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AWS Textract Document Extraction API</h1>
+        <p>API profesional para extracción de texto de documentos</p>
+    </div>
+    
+    <div class="content">
+        <h2>Características Principales</h2>
+        <ul class="feature">
+            <li><strong>Doble motor de extracción:</strong> AWS Textract + Librerías locales Python</li>
+            <li><strong>Múltiples fuentes:</strong> Archivos locales, S3 URIs, URLs HTTPS</li>
+            <li><strong>Procesamiento inteligente:</strong> Síncrono/asíncrono según el formato</li>
+            <li><strong>API REST moderna:</strong> FastAPI con documentación automática</li>
+        </ul>
+        
+        <h2>Formatos Soportados</h2>
+        <div class="feature">
+            <h3>AWS Textract (OCR avanzado)</h3>
+            <p>PDF, TIFF, PNG, JPG, JPEG</p>
+            
+            <h3>Extracción local (Python)</h3>
+            <p>DOCX, XLSX, XLS, PPTX, RTF, ODT</p>
+            
+            <h3>Texto estructurado</h3>
+            <p>TXT, MD, LOG, JSON, CSV, XML, HTML, YAML, INI</p>
+        </div>
+        
+        <h2>Endpoints</h2>
+        <ul>
+            <li><code>/api/extract</code> - Procesa archivos subidos</li>
+            <li><code>/api/extract-url</code> - Procesa desde URLs/S3</li>
+            <li><code>/health</code> - Health check</li>
+            <li><code>/docs</code> - Documentación Swagger</li>
+        </ul>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Plinior Zavala - AWS Textract API</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "aplicacion": {
+    "nombre": "AWS Textract API",
+    "version": "1.0.0",
+    "autor": "Plinior Zavala",
+    "descripcion": "API profesional para extracción de texto de documentos"
+  },
+  "servidor": {
+    "host": "localhost",
+    "puerto": 8000,
+    "ssl": false,
+    "workers": 4
+  },
+  "aws": {
+    "region": "us-east-1",
+    "s3_bucket": "textract-plinior-bucket",
+    "servicios": ["textract", "s3"]
+  },
+  "formatos_soportados": {
+    "textract": ["pdf", "png", "jpg", "jpeg", "tiff"],
+    "local": ["docx", "xlsx", "xls", "pptx", "rtf", "odt"],
+    "structured": ["txt", "md", "log", "json", "csv", "xml", "html", "yaml", "ini"]
+  },
+  "configuracion": {
+    "max_file_size": "16MB",
+    "timeout": 30,
+    "debug": true,
+    "cors_enabled": true
+  }
+}
