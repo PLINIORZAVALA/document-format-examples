@@ -157,5 +157,5 @@ Para más información sobre procesamiento de documentos y extracción de texto,
 
 ---
 
-**Última actualización**: 2024
+**Última actualización**: 24 de noviembre de 2025
 
